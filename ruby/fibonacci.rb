@@ -1,5 +1,16 @@
 def fibonacci(num)
-  # type your code in here
+  arr = [0, 1]
+  a = 0
+  b = 1
+  num.times do
+    num1 = arr[a]
+    num2 = arr[b]
+    num_to_shovel = num1 + num2
+    arr << num_to_shovel
+    a += 1
+    b += 1
+  end
+  arr[num]
 end
 
 if __FILE__ == $PROGRAM_NAME
